@@ -31,7 +31,7 @@ class DiskIOData():
         print("Read time: " + str(self.read_time) + "ms")
         print("Write time: " + str(self.write_time) + "ms")
 
-    def print_actual_data(self, pattern="{0:12} {1:22} {2:10} {3:10} {4:10} {5:10} {6:10}"):
+    def print_actual_data(self, pattern="{0:10} {1:15} {2:15} {3:15} {4:15} {5:15} {6:15}"):
         last_index = len(self.timestamps) - 1
         if last_index >= 0:
             print(pattern.format(str(self.disk_name),

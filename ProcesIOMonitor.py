@@ -30,7 +30,7 @@ class ProcessIOData():
         print("Read bytes: " + str(self.read_bytes))
         print("Write bytes: " + str(self.write_bytes))
 
-    def print_actual_data(self, pattern="{0:12} {1:10} {2:10} {3:10} {4:10} {5:10}"):
+    def print_actual_data(self, pattern="{0:10} {1:40} {2:15} {3:15} {4:15} {5:15}"):
         last_index = len(self.timestamps) - 1
         if last_index >= 0:
             print(pattern.format(str(self.pid),
