@@ -29,6 +29,8 @@ class IOMonitor():
         monitor = None
         if self.monitor_type == "disk":
             monitor = DiskIOMonitor(self.interval, self.iterations)
+        elif self.monitor_type == "files":
+            monitor = FilesIOMonitor(self.interval, self.iterations)
         else:
             monitor = ProcessIOMonitor(self.interval, self.iterations)
 
