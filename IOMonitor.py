@@ -15,7 +15,7 @@ class IOMonitor():
 
         parser.add_argument("-d", "--delay", help="Delay time interval. Specifies the delay between screen updates.", action="store", type=int, default=1)
         parser.add_argument("-i", "--iterations", help="Number of iterations. Specifies the maximum number of iterations.", action="store", type=int, default=10)
-        parser.add_argument("monitor_type", choices=['process', 'disk'])
+        parser.add_argument("monitor_type", choices=['process', 'disk', 'files'])
 
         self.arguments = parser.parse_args()
         self.assign_arguments()
